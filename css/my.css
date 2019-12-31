@@ -1,0 +1,13 @@
+@font-face{
+    font-family:'FontAwesome';src:url('{{.Site.BaseURL}}fonts/fontawesome-webfont.eot?v=4.7.0');
+    src:url('{{.Site.BaseURL}}fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('{{.Site.BaseURL}}fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('{{.Site.BaseURL}}fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('{{.Site.BaseURL}}fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight:normal;
+    font-style:normal
+    }
+
+span.hape {display: none}
+span.komputer {display: block}
+@media (max-width: 640px) { span.hape {display: block} span.komputer {display: none} }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Inseptek</title>
+    <link>https://inseptek.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Inseptek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id-id</language>
+    <lastBuildDate>Wed, 27 Sep 2017 17:25:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://inseptek.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Buat Blog dengan Hugo</title>
+      <link>https://inseptek.github.io/buat-blog-dengan-hugo/</link>
+      <pubDate>Wed, 27 Sep 2017 17:25:41 +0000</pubDate>
+      
+      <guid>https://inseptek.github.io/buat-blog-dengan-hugo/</guid>
+      <description>Hai Sobat Inseptek, kali ini saya akan mengajarkan Cara Buat Blog Statis dengan Menggunakan SSG Hugo mulai dari Installasi, Konfigurasi, Menulis Artikel sampai Deploy ke GitHub. Kalian pasti sudah tau kan apa itu Blog ?
+Blog pada dasarnya merupakan bagian dari situs wpebsite yang dapat diakses secara online yang memiliki fungsi utama memuat tulisan-tulisan dan gambar (dimuat dalam posting) pada setiap halaman web. Perlu diketahui Hugo merupakan SSG (Static Site Generator) yang sangat mudah dipahami dan Hugo dibuat menggunakan Bahasa GoLang.</description>
+    </item>
+    
+  </channel>
+</rss>
