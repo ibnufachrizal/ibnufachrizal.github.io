@@ -9,9 +9,8 @@
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
+	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
@@ -1339,8 +1338,7 @@ ol, ul{line-height:24px; margin-left:20px;}
 
 
 	
-<body>
-    
+<body>	
 	<header>
 		<a href="index-news-2.html" class="header-logo"></a>
         <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-navicon"></i></button>
@@ -1351,7 +1349,7 @@ ol, ul{line-height:24px; margin-left:20px;}
 	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
         <p class="sidebar-divider">News Pages</p>
 		<div class="sidebar-menu">
-            <a href="index-news-2.html" class="sidebar-item active-menu"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
+            <a href="index-news-2.html" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
             <a href="index-news.html" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Static<i class="fa fa-circle"></i></a>
 			<a href="list-thumbs.html" class="sidebar-item"><i class="fa fa-th-large"></i>News List Thumbs<i class="fa fa-circle"></i></a>
 			<a href="list-strips.html" class="sidebar-item"><i class="fa fa-navicon"></i>News List Strips<i class="fa fa-circle"></i></a>
@@ -1364,7 +1362,7 @@ ol, ul{line-height:24px; margin-left:20px;}
 		<div class="sidebar-menu">
             <a href="index-splash.html" class="sidebar-item"><i class="fa fa-star"></i>Splash<i class="fa fa-circle"></i></a>
             <a href="index-landing.html" class="sidebar-item"><i class="fa fa-th"></i>Landing<i class="fa fa-circle"></i></a>
-			<a href="features.html" class="sidebar-item"><i class="fa fa-cog"></i>Features<i class="fa fa-circle"></i></a>
+			<a href="features.html" class="sidebar-item active-menu"><i class="fa fa-cog"></i>Features<i class="fa fa-circle"></i></a>
 		</div>
         <amp-accordion class="sidebar-menu">
 			<section>
@@ -1444,192 +1442,236 @@ ol, ul{line-height:24px; margin-left:20px;}
         <p class="sidebar-divider sidebar-copyright">Copyright Here. All rights reserved.</p>
 	</amp-sidebar>
 
-    <amp-carousel class="news-top-slider" width="400" height="450" layout="responsive" type="slides" autoplay>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/0.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-red-dark">Breaking News</u>
-                <i>by<span>Enabled</span></i>
-                <strong>10 Reasons Why Google AMP is The Next Big Thing</strong>
-                <em>2 hours ago</em>
-            </a>
-        </div>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/2.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-green-dark">Just for You</u>
-                <i>by<span>Enabled</span></i>
-                <strong>Google AMP Carousel is Very Easy to Use! See?</strong>
-                <em>3 hours ago</em>
-            </a>
-        </div>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/3.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-orange-dark">Special News</u>
-                <i>by<span>Enabled</span></i>
-                <strong>We're Soon Releasing Google AMP WordPress Themes</strong>
-                <em>4 hours ago</em>
-            </a>
-        </div>
-    </amp-carousel>
-    
-    <div class="content full-bottom">
-        <div class="decoration"></div>
-        <div class="news-boxes">
-            <amp-carousel width="400" height="380" layout="responsive" type="slides" autoplay>
-            <div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/3t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-blue-dark">Tech</u>
-                    <strong>Mobile Websites are the Future of Your Website</strong>
-                    <em>1 hour ago</em>
-                </div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/4t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-green-dark">Web</u>
-                    <strong>The Bolt Icon in Search Results is Awesome</strong>
-                    <em>2 hour ago</em>
-                </div>
-            </div>
-            <div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/5t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-magenta-dark">Misc</u>
-                    <strong>Mobile Websites are the Future of Your Website</strong>
-                    <em>1 hour ago</em>
-                </div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/6t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-orange-dark">News</u>
-                    <strong>The Bolt Icon in Search Results is Awesome</strong>
-                    <em>2 hour ago</em>
-                </div>
-            </div>
-            </amp-carousel>
-            <div class="clear"></div>
-        </div>
-        <div class="decoration half-top"></div>
-    </div>
-    
-    <div class="content">
-        <div class="news-strip">
-            <a href="#">
-                <strong>Get Your Mobile Site Today, Find Out How</strong>
-                <amp-img src="images/pictures/0t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-        <div class="news-strip">
-            <a href="#">
-                <strong>AMP Pages Ranks Higher in Search</strong>
-                <amp-img src="images/pictures/1t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-        <div class="news-strip">
-            <a href="#">
-                <strong>Pages Load so Much Faster with AMP</strong>
-                <amp-img src="images/pictures/2t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="decoration"></div>
-        <h1 class="uppercase ultrabold no-bottom">TOP STORIES</h1>
-        <h6 class="uppercase ultrabold full-bottom color-red-dark">MORE STUFF FOR YOU</h6>
-    </div>
-    
-    <div class="news-top half-bottom">
-        <a href="#" class="news-header">
-            <amp-img src="images/pictures/4w.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img>
-            <u class="bg-green-dark">Featured Post</u>
-            <i>by<span>Enabled</span></i>
-            <strong>50% Discount for an Awesome Item for You Each Week</strong>
-            <em>2 hours ago</em>
-        </a>
-        <amp-accordion class="news-share">
-            <section>
-                <h4><i class="fa fa-retweet"></i></h4>
-                <p>
-                    <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                    <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                    <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                    <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                    <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                    <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                </p>
-            </section>
-        </amp-accordion>
-    </div>
-    <div class="news-top half-bottom">
-        <a href="#" class="news-header">
-            <amp-img src="images/pictures/5w.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img>
-            <u class="bg-blue-dark">Just for You</u>
-            <i>by<span>Enabled</span></i>
-            <strong>Mobile Websites are Soon Becoming Mandatory</strong>
-            <em>2 hours ago</em>
-        </a>
-        <amp-accordion class="news-share">
-            <section>
-                <h4><i class="fa fa-retweet"></i></h4>
-                <p>
-                    <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                    <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                    <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                    <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                    <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                    <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                </p>
-            </section>
-        </amp-accordion>
-    </div>
-    
-    <div class="content">
-        <div class="news-boxes full-bottom">
-            <div class="news-box-item">
-                <amp-img src="images/pictures/3t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-blue-dark">Tech</u>
-                <strong>Mobile Websites are the Future of Your Website</strong>
-                <em>1 hour ago</em>
-            </div>
-            <div class="news-box-item">
-                <amp-img src="images/pictures/4t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-green-dark">Web</u>
-                <strong>The Bolt Icon in Search Results is Awesome</strong>
-                <em>2 hour ago</em>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="news-strip">
-            <a href="#">
-                <strong>Pages Load so Much Faster with AMP</strong>
-                <amp-img src="images/pictures/2t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-            <amp-accordion class="news-share">
-                <section>
-                    <h4><i class="fa fa-retweet"></i></h4>
-                    <p>
-                        <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                        <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                        <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                        <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                        <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                        <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                    </p>
-                </section>
-            </amp-accordion>
-        </div>
-        <div class="decoration"></div>
-    </div>
-    
+	<div class="heading-block bg-1">
+		<h4>Columns</h4>
+		<p>Quality crafted, AMP valid!</p>
+		<div class="overlay"></div>
+	</div>
+	
+	<div class="content">
+		<div class="left-column">
+			<h4 class="quarter-bottom">1/2</h4>
+			<amp-img class="half-bottom" src="images/pictures/1ww.jpg" layout="responsive" width="300" height="130"></amp-img>
+			<p>
+				Praesent eget massa tristique, viverra nulla in, euismod lacus. Phasellus vitae urna quis arcu iaculis posuere
+			</p>
+		</div>
+		<div class="right-column">
+			<h4 class="quarter-bottom">2/2</h4>
+			<amp-img class="half-bottom" src="images/pictures/2ww.jpg" layout="responsive" width="300" height="130"></amp-img>
+			<p>
+				Praesent eget massa tristique, viverra nulla in, euismod lacus. Phasellus vitae urna quis arcu iaculis posuere
+			</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content">
+		<div class="one-third-left">
+			<h4 class="quarter-bottom">1/3</h4>
+			<amp-img class="half-bottom" src="images/pictures/1ww.jpg" layout="responsive" width="300" height="130"></amp-img>
+			<p>Cras egestas mollis semper.</p>
+		</div>
+		<div class="one-third-center">
+			<h4 class="quarter-bottom">2/3</h4>
+			<amp-img class="half-bottom" src="images/pictures/1ww.jpg" layout="responsive" width="300" height="130"></amp-img>
+			<p>Cras egestas mollis semper.</p>
+		</div>
+		<div class="one-third-right">
+			<h4 class="quarter-bottom">3/3</h4>
+			<amp-img class="half-bottom" src="images/pictures/1ww.jpg" layout="responsive" width="300" height="130"></amp-img>
+			<p>Cras egestas mollis semper.</p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-8">
+		<h4>Buttons</h4>
+		<p>Simple & Effective!</p>
+		<div class="overlay"></div>
+	</div>
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content full-bottom">
+		<a href="#" class="button bg-green-light">Button</a>
+		<a href="#" class="button bg-red-light">Button</a>
+		<a href="#" class="button bg-blue-light">Button</a>
+		<a href="#" class="button bg-teal-light">Button</a>
+		<a href="#" class="button bg-magenta-light">Button</a>
+		<a href="#" class="button bg-night-light">Button</a>
+		<a href="#" class="button bg-orange-light">Button</a>
+		<a href="#" class="button bg-gray-dark">Button</a>
+		<a href="#" class="button bg-pink-dark">Button</a>
+	</div>	
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-8">
+		<h4>Icons</h4>
+		<p>Simple & Effective!</p>
+		<div class="overlay"></div>
+	</div>
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content full-bottom">
+		<a href="#" class="icon-round facebook-bg"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="icon-round google-bg"><i class="fa fa-google-plus"></i></a>
+		<a href="#" class="icon-round twitter-bg"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="icon-round pinterest-bg"><i class="fa fa-pinterest"></i></a>
+		<a href="#" class="icon-round dribbble-bg"><i class="fa fa-dribbble"></i></a>
+		
+		<a href="#" class="icon-square facebook-bg"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="icon-square google-bg"><i class="fa fa-google-plus"></i></a>
+		<a href="#" class="icon-square twitter-bg"><i class="fa fa-twitter"></i></a>
+		<a href="#" class="icon-square pinterest-bg"><i class="fa fa-pinterest"></i></a>
+		<a href="#" class="icon-square dribbble-bg"><i class="fa fa-dribbble"></i></a>
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-3">
+		<h4>Dropcaps</h4>
+		<p>Simple & Effective!</p>
+		<div class="overlay"></div>
+	</div>
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content">
+		<p class="dropcaps-1">Aorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius dui et erat aliquet rutrum. Nunc vitae tincidunt magna. In vitae efficitur enim. Fusce a augue mi.</p>
+		<p class="dropcaps-2">Borem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius dui et erat aliquet rutrum. Nunc vitae tincidunt magna. In vitae efficitur enim. Fusce a augue mi.</p>
+		<p class="dropcaps-3">Corem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius dui et erat aliquet rutrum. Nunc vitae tincidunt magna. In vitae efficitur enim. Fusce a augue mi.</p>
+		<p class="dropcaps-4">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius dui et erat aliquet rutrum. Nunc vitae tincidunt magna. In vitae efficitur enim. Fusce a augue mi.</p>
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content full-bottom">
+		<p class="highlight"><span class="bg-red-dark">Highlight text</span> is really easy to use</p>
+		<p class="highlight"><span class="bg-green-dark">Highlight text</span> is really easy to use</p>
+		<p class="highlight"><span class="bg-blue-dark">Highlight text</span> is really easy to use</p>
+		<p class="highlight"><span class="bg-orange-dark">Highlight text</span> is really easy to use</p>
+		<p class="highlight"><span class="bg-magenta-dark">Highlight text</span> is really easy to use</p>
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-4">
+		<h4>List Styles</h4>
+		<p>Ordered, unordered, and icons</p>
+		<div class="overlay"></div>
+	</div>
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content">
+		<ol class="full-bottom">
+			<li>List Item</li>
+			<li>List Item</li>
+			<ul>
+				<li>List Item</li>
+				<li>List Item</li>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+				<li>List Item</li>
+				<li>List Item</li>
+			</ul>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ol>		
+	</div>	
+	
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content">
+		<ol class="icon-list full-bottom">
+			<li><i class="fa fa-caret-right"></i>List Item</li>
+			<li><i class="fa fa-caret-down"></i>List Item</li>
+			<ul>
+				<li><i class="fa fa-angle-right"></i>List Item</li>
+				<li><i class="fa fa-angle-down"></i>List Item</li>
+				<ul>
+					<li><i class="fa fa-angle-right"></i>List Item</li>
+					<li><i class="fa fa-angle-right"></i>List Item</li>
+					<li><i class="fa fa-angle-right"></i>List Item</li>
+				</ul>
+				<li><i class="fa fa-angle-up"></i>List Item</li>
+				<li><i class="fa fa-angle-right"></i>List Item</li>
+			</ul>
+			<li><i class="fa fa-angle-up"></i>List Item</li>
+			<li><i class="fa fa-angle-right"></i>List Item</li>
+		</ol>		
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-5">
+		<h4>Reviews & Quotes</h4>
+		<p>Great for testimonials!</p>
+		<div class="overlay"></div>
+	</div>
+	<div class="decoration decoration-margins"></div>
+	
+	<div class="content">
+		<div class="blockquote-1 full-bottom">
+			<p class="italic">This is a classic, standard, blockquote design, that everyone uses and it's fantastically easy to use. Add your text and the author</p>
+			<a href="#">Enabled | ThemeForest</a>
+		</div>
+		
+		<div class="decoration"></div>
+		
+		<div class="blockquote-2 full-bottom">
+			<amp-img class="blockquote-image" src="images/pictures/2t.jpg" width="50" height="50"></amp-img>
+			<h5>Alexander Stranger</h5>
+			<i class="first-icon half-bottom color-yellow-dark fa fa-star"></i>
+			<i class="color-yellow-dark fa fa-star"></i>
+			<i class="color-yellow-dark fa fa-star"></i>
+			<i class="color-yellow-dark fa fa-star"></i>
+			<i class="color-yellow-dark fa fa-star"></i>
+			<p class="italic">
+				The template is beautify, easy to use, and very well documented, but he best has been the customer support. Prompt, helpful replies.
+			</p>
+			<a href="#">Awesome Buyer | ThemeForest</a>
+		</div>
+		
+		<div class="decoration"></div>
+		
+		<div class="blockquote-3 full-bottom">
+			<amp-img class="blockquote-image" src="images/pictures/3t.jpg" width="150" height="150"></amp-img>
+			<h5 class="center-text">Alexander Stranger</h5>
+			<div class="ratings">
+				<i class="color-yellow-dark fa fa-star"></i>
+				<i class="color-yellow-dark fa fa-star"></i>
+				<i class="color-yellow-dark fa fa-star"></i>
+				<i class="color-yellow-dark fa fa-star"></i>
+				<i class="color-yellow-dark fa fa-star"></i>
+			</div>
+			<p class="center-text half-bottom">
+				Template is beautify, easy to use, and very well documented, but he best has been the customer support. Prompt, helpful replies.
+			</p>
+			<a href="#" class="center-text full-bottom">Awesome Buyer | ThemeForest</a>
+		</div>
+		
+		<div class="decoration"></div>
+		
+		<div class="blockquote-4">
+			<i class="fa fa-quote-left"></i>
+			<p class="half-bottom">
+				Great product as always plus good team and wonderful support. Worth 5 stars and more! Please keep up the good work.
+			</p>
+			<a href="#" class="right-text full-bottom">Alexander Stranger</a>
+		</div>		
+	</div>
+	
+	<div class="decoration decoration-margins"></div>
+	<div class="heading-block bg-6">
+		<h4>Much More</h4>
+		<p>Check out other pages!</p>
+		<div class="overlay"></div>
+	</div>
+	
     <div class="footer">
+        <div class="decoration full-top"></div>
         <a href="#" class="footer-logo"></a>
         <p class="center-text boxed-text half-bottom">
             Serving content with brilliant design in the fastest and most beautiful way!

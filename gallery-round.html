@@ -9,9 +9,8 @@
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
-<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
+	<!--AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.-->
 <link rel="canonical" href="index.html">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
@@ -1337,10 +1336,8 @@ ol, ul{line-height:24px; margin-left:20px;}
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 
-
 	
-<body>
-    
+<body>	
 	<header>
 		<a href="index-news-2.html" class="header-logo"></a>
         <button class="header-icon-2" on='tap:sidebar.toggle'><i class="fa fa-navicon"></i></button>
@@ -1351,7 +1348,7 @@ ol, ul{line-height:24px; margin-left:20px;}
 	<amp-sidebar id="sidebar" layout="nodisplay" side="left">
         <p class="sidebar-divider">News Pages</p>
 		<div class="sidebar-menu">
-            <a href="index-news-2.html" class="sidebar-item active-menu"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
+            <a href="index-news-2.html" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Slider<i class="fa fa-circle"></i></a>
             <a href="index-news.html" class="sidebar-item"><i class="fa fa-newspaper-o"></i>News Front Static<i class="fa fa-circle"></i></a>
 			<a href="list-thumbs.html" class="sidebar-item"><i class="fa fa-th-large"></i>News List Thumbs<i class="fa fa-circle"></i></a>
 			<a href="list-strips.html" class="sidebar-item"><i class="fa fa-navicon"></i>News List Strips<i class="fa fa-circle"></i></a>
@@ -1412,10 +1409,10 @@ ol, ul{line-height:24px; margin-left:20px;}
 					<li><a href="page-timeline-2.html"><i class="fa fa-angle-right"></i>Timeline Page 2<i class="fa fa-circle"></i></a></li>
 				</ul>
 			</section>
-			<section>
-				<h4><i class="fa fa-camera"></i>Gallery<i class="fa fa-angle-down"></i></h4>
+			<section expanded>
+				<h4 class="active-menu"><i class="fa fa-camera"></i>Gallery<i class="fa fa-angle-down"></i></h4>
 			  	<ul>
-					<li><a href="gallery-round.html"><i class="fa fa-angle-right"></i>Round<i class="fa fa-circle"></i></a></li>
+					<li class="active-menu"><a href="gallery-round.html"><i class="fa fa-angle-right"></i>Round<i class="fa fa-circle"></i></a></li>
 					<li><a href="gallery-square.html"><i class="fa fa-angle-right"></i>Squared<i class="fa fa-circle"></i></a></li>
 					<li><a href="gallery-wide.html"><i class="fa fa-angle-right"></i>Wide<i class="fa fa-circle"></i></a></li>
 				</ul>
@@ -1443,193 +1440,31 @@ ol, ul{line-height:24px; margin-left:20px;}
         </div>
         <p class="sidebar-divider sidebar-copyright">Copyright Here. All rights reserved.</p>
 	</amp-sidebar>
-
-    <amp-carousel class="news-top-slider" width="400" height="450" layout="responsive" type="slides" autoplay>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/0.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-red-dark">Breaking News</u>
-                <i>by<span>Enabled</span></i>
-                <strong>10 Reasons Why Google AMP is The Next Big Thing</strong>
-                <em>2 hours ago</em>
-            </a>
-        </div>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/2.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-green-dark">Just for You</u>
-                <i>by<span>Enabled</span></i>
-                <strong>Google AMP Carousel is Very Easy to Use! See?</strong>
-                <em>3 hours ago</em>
-            </a>
-        </div>
-        <div class="news-top half-bottom">
-            <a href="#" class="news-header">
-                <amp-img src="images/pictures/3.jpg" layout="responsive" width="600" height="400" alt="img"></amp-img>
-                <u class="bg-orange-dark">Special News</u>
-                <i>by<span>Enabled</span></i>
-                <strong>We're Soon Releasing Google AMP WordPress Themes</strong>
-                <em>4 hours ago</em>
-            </a>
-        </div>
-    </amp-carousel>
     
-    <div class="content full-bottom">
-        <div class="decoration"></div>
-        <div class="news-boxes">
-            <amp-carousel width="400" height="380" layout="responsive" type="slides" autoplay>
-            <div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/3t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-blue-dark">Tech</u>
-                    <strong>Mobile Websites are the Future of Your Website</strong>
-                    <em>1 hour ago</em>
-                </div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/4t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-green-dark">Web</u>
-                    <strong>The Bolt Icon in Search Results is Awesome</strong>
-                    <em>2 hour ago</em>
-                </div>
-            </div>
-            <div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/5t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-magenta-dark">Misc</u>
-                    <strong>Mobile Websites are the Future of Your Website</strong>
-                    <em>1 hour ago</em>
-                </div>
-                <div class="news-box-item">
-                    <amp-img src="images/pictures/6t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                    <u class="bg-orange-dark">News</u>
-                    <strong>The Bolt Icon in Search Results is Awesome</strong>
-                    <em>2 hour ago</em>
-                </div>
-            </div>
-            </amp-carousel>
-            <div class="clear"></div>
-        </div>
-        <div class="decoration half-top"></div>
-    </div>
-    
-    <div class="content">
-        <div class="news-strip">
-            <a href="#">
-                <strong>Get Your Mobile Site Today, Find Out How</strong>
-                <amp-img src="images/pictures/0t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-        <div class="news-strip">
-            <a href="#">
-                <strong>AMP Pages Ranks Higher in Search</strong>
-                <amp-img src="images/pictures/1t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-        <div class="news-strip">
-            <a href="#">
-                <strong>Pages Load so Much Faster with AMP</strong>
-                <amp-img src="images/pictures/2t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="decoration"></div>
-        <h1 class="uppercase ultrabold no-bottom">TOP STORIES</h1>
-        <h6 class="uppercase ultrabold full-bottom color-red-dark">MORE STUFF FOR YOU</h6>
-    </div>
-    
-    <div class="news-top half-bottom">
-        <a href="#" class="news-header">
-            <amp-img src="images/pictures/4w.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img>
-            <u class="bg-green-dark">Featured Post</u>
-            <i>by<span>Enabled</span></i>
-            <strong>50% Discount for an Awesome Item for You Each Week</strong>
-            <em>2 hours ago</em>
-        </a>
-        <amp-accordion class="news-share">
-            <section>
-                <h4><i class="fa fa-retweet"></i></h4>
-                <p>
-                    <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                    <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                    <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                    <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                    <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                    <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                </p>
-            </section>
-        </amp-accordion>
-    </div>
-    <div class="news-top half-bottom">
-        <a href="#" class="news-header">
-            <amp-img src="images/pictures/5w.jpg" layout="responsive" width="600" height="250" alt="img"></amp-img>
-            <u class="bg-blue-dark">Just for You</u>
-            <i>by<span>Enabled</span></i>
-            <strong>Mobile Websites are Soon Becoming Mandatory</strong>
-            <em>2 hours ago</em>
-        </a>
-        <amp-accordion class="news-share">
-            <section>
-                <h4><i class="fa fa-retweet"></i></h4>
-                <p>
-                    <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                    <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                    <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                    <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                    <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                    <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                </p>
-            </section>
-        </amp-accordion>
-    </div>
-    
-    <div class="content">
-        <div class="news-boxes full-bottom">
-            <div class="news-box-item">
-                <amp-img src="images/pictures/3t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-blue-dark">Tech</u>
-                <strong>Mobile Websites are the Future of Your Website</strong>
-                <em>1 hour ago</em>
-            </div>
-            <div class="news-box-item">
-                <amp-img src="images/pictures/4t.jpg" class="responsive-image" layout="responsive" width="200" height="200" alt="img"></amp-img>
-                <u class="bg-green-dark">Web</u>
-                <strong>The Bolt Icon in Search Results is Awesome</strong>
-                <em>2 hour ago</em>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    
-    <div class="content">
-        <div class="news-strip">
-            <a href="#">
-                <strong>Pages Load so Much Faster with AMP</strong>
-                <amp-img src="images/pictures/2t.jpg" width="200" height="200" layout="responsive"></amp-img>
-                <u>2 Hours ago</u>
-            </a>
-            <amp-accordion class="news-share">
-                <section>
-                    <h4><i class="fa fa-retweet"></i></h4>
-                    <p>
-                        <amp-social-share type="facebook" width="43" height="40" class="custom-news-share"><i class="fa fa-facebook"></i></amp-social-share>
-                        <amp-social-share type="twitter" width="43" height="40" class="custom-news-share"><i class="fa fa-twitter"></i></amp-social-share>
-                        <amp-social-share type="gplus" width="43" height="40" class="custom-news-share"><i class="fa fa-google-plus"></i></amp-social-share>
-                        <amp-social-share type="pinterest" width="43" height="40" class="custom-news-share"><i class="fa fa-pinterest"></i></amp-social-share>
-                        <amp-social-share type="linkedin" width="43" height="40" class="custom-news-share"><i class="fa fa-linkedin"></i></amp-social-share>
-                        <amp-social-share type="email" width="43" height="40" class="custom-news-share"><i class="fa fa-envelope-o"></i></amp-social-share>
-                    </p>
-                </section>
-            </amp-accordion>
-        </div>
-        <div class="decoration"></div>
-    </div>
-    
+	<div class="heading-block bg-1">
+		<h4>Gallery Round</h4>
+		<p>Powered by Lightbox & AMP!</p>
+		<div class="overlay"></div>
+	</div>
+	
+	<div class="content">
+		<amp-image-lightbox id="lightbox1"layout="nodisplay"></amp-image-lightbox>
+		<div class="gallery gallery-round full-bottom">
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/0t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/1t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/2t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/3t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/4t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/5t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/6t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/7t.jpg" width="300" height="300"></amp-img>
+			 <amp-img class="gallery-thumb" on="tap:lightbox1" role="button" tabindex="0" layout="responsive" src="images/pictures/8t.jpg" width="300" height="300"></amp-img>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
     <div class="footer">
+        <div class="decoration full-top"></div>
         <a href="#" class="footer-logo"></a>
         <p class="center-text boxed-text half-bottom">
             Serving content with brilliant design in the fastest and most beautiful way!
