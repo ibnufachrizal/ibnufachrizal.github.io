@@ -13,9 +13,11 @@ toc: false
 
 **"Apa itu Network Engineer ?"**
 
-<justify;">Secara umum, kata **“Network”** dapat diartikan sebagai kumpulan komputer, server, mainframe, router, switch, periferal, atau perangkat lain yang terhubung satu sama lain dan memungkinkan untuk saling berbagi data dan sumber daya.</p>
+
+<p align=”justify”></p>Secara umum, kata **“Network”** dapat diartikan sebagai kumpulan komputer, server, mainframe, router, switch, periferal, atau perangkat lain yang terhubung satu sama lain dan memungkinkan untuk saling berbagi data dan sumber daya.</p>
  
-<justify;">Sedangkan **“Engineer”** adalah seseorang yang terlatih dan memiliki kompetensi atau keahlian di bidang tertentu.
+
+<p style="text-align:justify;"></p>Sedangkan **“Engineer”** adalah seseorang yang terlatih dan memiliki kompetensi atau keahlian di bidang tertentu.
 
 <p style="text-align:justify;"></p>Jadi, **"Network Engineer"** bisa diartikan sebagai orang yang memiliki kompetensi dan keahlian di bidang jaringan komputer untuk melakukan serangkaian tugas-tugas khusus seperti merancang, menginstalasi, mengkonfigurasi dan melakukan troubleshooting yang berkaitan dengan perangkat-perangkat yang ada di dalam jaringan komputer.
 
