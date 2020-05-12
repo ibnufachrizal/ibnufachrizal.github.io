@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Become a Network Engineer !"
+title:  "Become a Network Engineer"
 author: ibnu
 categories: [ info ]
 image: assets/images/network1.jpg
 
-beforetoc: "Di artikel ini saya ingin sedikit berbagi tips dan kiat-kiat sukses menjadi seorang Network Engineer, apa-apa saja yang mesti dipersiapkan jika kita ingin meniti karir sebagai IT Network Engineer."
-toc: true
+beforetoc: ""
+toc: false
 ---
-Become a Network Engineer !
+<p style="text-align:justify;">Di artikel ini saya ingin sedikit berbagi tips dan kiat-kiat sukses menjadi seorang Network Engineer, apa-apa saja yang mesti dipersiapkan jika kita ingin meniti karir sebagai IT Network Engineer.
 
 
 **"Apa itu Network Engineer ?"**
