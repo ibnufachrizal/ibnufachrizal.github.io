@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Github Pages dan Jekyll"
-date:   2020-05-013 18:40:00 +0800
+date:   2020-05-013 18:43:00 +0800
 categories: kisah
 ---
 
