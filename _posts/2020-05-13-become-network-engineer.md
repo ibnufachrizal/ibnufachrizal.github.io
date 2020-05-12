@@ -4,19 +4,17 @@ title:  "Become a Network Engineer !"
 author: ibnu
 categories: [ info ]
 image: assets/images/network1.jpg
-image: assets/images/network2.jpg
-image: assets/images/network3.jpg
+
 beforetoc: "Di artikel ini saya ingin sedikit berbagi tips dan kiat-kiat sukses menjadi seorang Network Engineer, apa-apa saja yang mesti dipersiapkan jika kita ingin meniti karir sebagai IT Network Engineer."
 toc: true
 ---
 Become a Network Engineer !
 
-Di artikel ini saya ingin sedikit berbagi tips dan **"kiat-kiat sukses menjadi seorang Network Engineer"**, apa-apa saja yang mesti dipersiapkan jika kita ingin meniti karir sebagai IT Network Engineer.
 
 **"Apa itu Network Engineer ?"**
 
-Secara umum, kata “Network” dapat diartikan sebagai kumpulan komputer, server, mainframe, router, switch, periferal, atau perangkat lain yang terhubung satu sama lain dan memungkinkan untuk saling berbagi data dan sumber daya.image: assets/images/12.jpg
-
+Secara umum, kata “Network” dapat diartikan sebagai kumpulan komputer, server, mainframe, router, switch, periferal, atau perangkat lain yang terhubung satu sama lain dan memungkinkan untuk saling berbagi data dan sumber daya.
+ 
 Sedangkan “Engineer” adalah seseorang yang terlatih dan memiliki kompetensi atau keahlian di bidang tertentu.
 
 Jadi, **"Network Engineer"** bisa diartikan sebagai orang yang memiliki kompetensi dan keahlian di bidang jaringan komputer untuk melakukan serangkaian tugas-tugas khusus seperti merancang, menginstalasi, mengkonfigurasi dan melakukan troubleshooting yang berkaitan dengan perangkat-perangkat yang ada di dalam jaringan komputer.
