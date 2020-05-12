@@ -41,7 +41,9 @@ Seorang Network Engineer yang bekerja di sebuah perusahaan dalam melakukan tugas
 
 Meskipun masih berhubungan dengan dunia IT tapi itu bukanlah job desk utama seorang Network Engineer, melainkan job desk utama IT Support.
 
+---
 image: assets/images/network2.jpg
+---
 
 Lingkup kerja Network Engineer adalah mengurusi masalah yang berkaitan dengan perangkat-perangkat jaringan komputer seperti Router, Switch, Firewall dan Server. Secara deskriptif, maka job desk Network Engineer bisa dijabarkan seperti ini :
 
@@ -75,7 +77,9 @@ Lalu apa saja skill / kompetensi / keahlian / kemampuan yang harus dikuasi oleh 
 **"Apa yang harus dipersiapkan untuk menjadi seorang Network Engineer ?"**
 Lalu apa saja yang harus disiapkan agar bisa bekerja sebagai Network Engineer ? Bagi teman-teman yang menempuh pendidikan di SMK jurusan TKJ, saya rasa teman-teman sudah punya bekal yang cukup, ini karena kurikulum pendidikan di SMK TKJ saat ini sudah cukup bagus (dibandingkan jaman saya dulu), selama menempuh pendidikan, siswa akan dibekali dengan skill networking dan linux system administration yang baik, tinggal nanti ambil sertifikasi saja seperti MTCNA (Mikrotik) maupun CCNA (Cisco).
 
+---
 image: assets/images/network3.jpg
+---
 
 Namun bagi teman-teman yang bukan lulusan TKJ tidak usah berkecil hati, karena ilmu networking menurut saya tidak terlalu susah seperti ilmu programming. Semua orang bisa mempelajari ilmu networking sekalipun belum punya basic sama sekali (belajar secara otodidak).
 
