@@ -2,7 +2,7 @@
 title:       Ibnu Fachrizal
 email:       ibnufachrizal63@gmail.com
 author:      Ibnu Fachrizal
-description: "Website Pribadi Ibnu Fachrizal, untuk menampung catatan harian."
+description: "blog pribadi untuk catatan harian."
 baseurl:     ""
 url:         "https://ibnufachrizal.github.io"
 date_format: "%b %-d, %Y"
@@ -47,7 +47,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: ibnufachrizal
+github_username:
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
@@ -55,7 +55,7 @@ twitter_username:
 skype_username:
 steam_nickname:
 google_plus_id:
-linkedin_username: ibnufachrizal
+linkedin_username:
 angellist_username:
 medium_id:
 bitcoin_url:
