@@ -1,111 +1,153 @@
-drafts_dir = '_drafts'
-posts_dir  = '_posts'
+# encoding: UTF-8
+require "rubygems"
+require "tmpdir"
+require "bundler/setup"
+require "jekyll"
+require "bourbon"
 
-# rake post['my new post']
-desc 'create a new post with "rake post[\'post title\']"'
-task :post, :title do |t, args|
-  if args.title
-    title = args.title
-  else
-    puts "Please try again. Remember to include the filename."
+# Change your GitHub reponame
+GITHUB_REPONAME = "nandomoreirame/end2end"
+GITHUB_REPO_BRANCH = "gh-pages"
+
+SOURCE = "source/"
+DEST = "_site"
+CONFIG = {
+  'layouts' => File.join(SOURCE, "_layouts"),
+  'posts' => File.join(SOURCE, "_posts"),
+  'post_ext' => "md",
+  'categories' => File.join(SOURCE, "categories"),
+  'tags' => File.join(SOURCE, "tags")
+}
+
+task default: %w[publish]
+
+desc "Generate blog files"
+task :generate do
+  Jekyll::Site.new(Jekyll.configuration({
+    "source"      => "source/",
+    "destination" => "_site",
+    "config"      => "_config.yml"
+  })).process
+end
+
+desc "Generate and publish blog to gh-pages"
+task :publish => [:generate] do
+  Dir.mktmpdir do |tmp|
+    cp_r "_site/.", tmp
+
+    pwd = Dir.pwd
+    Dir.chdir tmp
+
+    system "git init"
+    system "git checkout --orphan #{GITHUB_REPO_BRANCH}"
+    system "git add ."
+    message = "Site updated at #{Time.now.utc}"
+    system "git commit -am #{message.inspect}"
+    system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
+    system "git push origin #{GITHUB_REPO_BRANCH} --force"
+
+    Dir.chdir pwd
   end
-  mkdir_p "#{posts_dir}"
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.downcase.gsub(/[^\w]+/, '-')}.md"
+end
+
+desc "Begin a new post in #{CONFIG['posts']}"
+task :post do
+  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+  title = ENV["title"] || "Novo post"
+
+  tags = ""
+  categories = ""
+
+  # tags
+  env_tags = ENV["tags"] || ""
+  tags = strtag(env_tags)
+
+  # categorias
+  env_cat = ENV["category"] || ""
+  categories = strtag(env_cat)
+
+  # slug do post
+  slug = mount_slug(title)
+
+  begin
+    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
+    time = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%T')
+  rescue => e
+    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
+    exit -1
+  end
+
+  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+
   puts "Creating new post: #{filename}"
-  File.open(filename, "w") do |f|
-    f << <<-EOS.gsub(/^    /, '')
-    ---
-    layout: post
-    title: #{title}
-    date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
-    categories:
-    ---
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: post"
+    post.puts "title: \"#{title.gsub(/-/,' ')}\""
+    post.puts "permalink: #{slug}"
+    post.puts "date: #{date} #{time}"
+    post.puts "comments: true"
+    post.puts "description: \"#{title}\""
+    post.puts 'keywords: ""'
+    post.puts "categories:"
+    post.puts "#{categories}"
+    post.puts "tags:"
+    post.puts "#{tags}"
+    post.puts "---"
+  end
+end # task :post
 
-    EOS
+
+desc "Create a new page."
+task :page do
+  name = ENV["name"] || "new-page.md"
+  filename = File.join(SOURCE, "#{name}")
+  filename = File.join(filename, "index.html") if File.extname(filename) == ""
+  title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
 
-# Uncomment the line below if you want the post to automatically open in your default text editor
-#  system ("#{ENV['EDITOR']} #{filename}")
+  slug = mount_slug(title)
+
+  mkdir_p File.dirname(filename)
+  puts "Creating new page: #{filename}"
+  open(filename, 'w') do |post|
+    post.puts "---"
+    post.puts "layout: page"
+    post.puts "title: \"#{title}\""
+    post.puts 'description: ""'
+    post.puts 'keywords: ""'
+    post.puts "permalink: \"#{slug}\""
+    post.puts "slug: \"#{slug}\""
+    post.puts "---"
+    post.puts "{% include JB/setup %}"
+  end
+end # task :page
+
+def mount_slug(title)
+  slug = str_clean(title)
+  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+
+  return slug
 end
 
-# usage: rake draft['my new draft']
-desc 'create a new draft post with "rake draft[\'draft title\']"'
-task :draft, :title do |t, args|
-  if args.title
-    title = args.title
-  else
-    puts "Please try again. Remember to include the filename."
-  end
-  mkdir_p "#{drafts_dir}"
-  filename = "#{drafts_dir}/#{title.downcase.gsub(/[^\w]+/, '-')}.md"
-  puts "Creating new draft: #{filename}"
-  File.open(filename, "w") do |f|
-    f << <<-EOS.gsub(/^    /, '')
-    ---
-    layout: post
-    title: #{title}
-    date: #{Time.new.strftime('%Y-%m-%d %H:%M')}
-    categories:
-    ---
-
-    EOS
-  end
-
-# Uncomment the line below if you want the draft to automatically open in your default text editor
-# system ("#{ENV['EDITOR']} #{filename}")
+def str_clean(title)
+  return title.tr("ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž", "AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz")
 end
 
-desc 'preview the site with drafts'
-task :preview do
-  puts "## Generating site"
-  puts "## Stop with ^C ( <CTRL>+C )"
-  system "jekyll serve --watch --drafts"
-end
+def strtag(str_tags)
+  tags = "";
 
-# usage: rake undraft['my-file.md']
-desc 'publish a draft post with "rake undraft[\'draft-file.md\']"'
-task :undraft, :file do |t, args|
-  if args.file
-    file = args.file
-  else
-    abort "Please try again. Remember to include the file name."
-  end
-
-  draft = "#{drafts_dir}/#{file}"
-  unless File.exists?(draft)
-    abort "Draft does not exist: #{draft}"
-  end
-
-  today = Time.now
-  post = "#{posts_dir}/#{today.strftime('%Y-%m-%d')}-#{file}"
-
-  # Slurp file in to memory
-  lines = IO.readlines(draft).map do |line|
-    dateline = /\s*^date:\s*(.*)\s*$/.match(line)
-    if dateline
-      puts "Original date of draft: #{dateline[1]}"
-      "date: #{today.strftime('%Y-%m-%d %H:%M')}"
-    else
-      line
+  if !str_tags.nil?
+    arr_tags = str_tags.split(",")
+    arr_tags.each do |t|
+      tags = tags + "- " + t.delete(' ') + "\n"
     end
   end
 
-  print "Moving #{draft} to #{post}..."
-  FileUtils.mv(draft, post)
-  puts "done."
-
-  print "Modifying date for post to '#{today.strftime('%Y-%m-%d %H:%M')}'..."
-  File.open(post, 'w') do |file|
-    file.puts lines
-  end
-  puts "done."
-
-# Uncomment the line below if you want the post to automatically open in your default text editor
-# system ("#{ENV['EDITOR']} #{post}")
-end
-
-desc 'list tasks'
-task :list do
-  puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
-  puts "(type rake -T for more detail)\n\n"
+  return tags
 end
