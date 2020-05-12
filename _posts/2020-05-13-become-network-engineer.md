@@ -41,9 +41,8 @@ Seorang Network Engineer yang bekerja di sebuah perusahaan dalam melakukan tugas
 
 Meskipun masih berhubungan dengan dunia IT tapi itu bukanlah job desk utama seorang Network Engineer, melainkan job desk utama IT Support.
 
----
-image: assets/images/network2.jpg
----
+... which is shown in the screenshot below:
+![Picture 1](/assets/images/network2.jpg)
 
 Lingkup kerja Network Engineer adalah mengurusi masalah yang berkaitan dengan perangkat-perangkat jaringan komputer seperti Router, Switch, Firewall dan Server. Secara deskriptif, maka job desk Network Engineer bisa dijabarkan seperti ini :
 
