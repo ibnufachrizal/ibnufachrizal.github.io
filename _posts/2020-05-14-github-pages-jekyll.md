@@ -8,7 +8,6 @@ image: assets/images/github1.jpg
 beforetoc: ""
 toc: true
 ---
-Github Pages dan Jekyll
 
 Bismillah,
 
@@ -18,7 +17,7 @@ Masih agak bingung dari mana memulai, he...he..
 
 Buat Repository dengan nama username.github.io
 
-![Gambar1](/assets/github2.png)
+![Gambar1](/assets/images/github2.png)
 
 Clone Repository baru tadi ke laptop
 
@@ -61,13 +60,13 @@ ibnu@E202SA:~/tmp/ibnufachrizal.github.io$ git push
 
 Pengaturan Domain, buat alias pada domain untuk mengarah ke ibnufachrizal.github.io
 
-![Gambar2](/assets/domain1.png)
+![Gambar2](/assets/images/domain1.png)
 
 Setting alias pada repository
 
-![Gambar3](/assets/github3.png)
+![Gambar3](/assets/images/github3.png)
 
-# Fitur lain Jekyll
+**Fitur lain Jekyll**
 
 - Generate seluruh website untuk di letakkan di Apache Root Directory
 
@@ -109,9 +108,6 @@ Configuration file: /home/ibnu/working/ibnufachrizal.github.io/_config.yml
 
 Sekian dan semoga bermanfaat.
 
-# Alhamdulillah
-
-
 Daftar Pustaka
 
-1. [Github Pages Jekyll](https://www.google.com/search?q=github+pages+jekyll)
+# 1. [Github Pages Jekyll](https://www.google.com/search?q=github+pages+jekyll)
