@@ -83,9 +83,7 @@ Lalu apa saja yang harus disiapkan agar bisa bekerja sebagai Network Engineer ? 
 
 Namun bagi teman-teman yang bukan lulusan TKJ tidak usah berkecil hati, karena ilmu networking menurut saya tidak terlalu susah seperti ilmu programming. Semua orang bisa mempelajari ilmu networking sekalipun belum punya basic sama sekali (belajar secara otodidak).
 
-Tapi memang ada baiknya jika teman-teman belajar langsung dengan instruktur jaringan yang sudah berpengalaman. Teman-teman bisa ambil online course. Btw, saya akan memberikan referensi online course jaringan yang gratis dan menurut saya sangat bagus, yaitu online course yang dibuat oleh pakar IT ternama di Indonesia Bpk. Onno W. Purbo, kamu bisa mengakses online coursenya disini.
-
-> https://lms.onnocenter.or.id/moodle/course/view.php?id=32
+Tapi memang ada baiknya jika teman-teman belajar langsung dengan instruktur jaringan yang sudah berpengalaman. Teman-teman bisa ambil online course. Btw, saya akan memberikan referensi online course jaringan yang gratis dan menurut saya sangat bagus, yaitu online course yang dibuat oleh pakar IT ternama di Indonesia Bpk. Onno W. Purbo, kamu bisa mengakses online coursenya <a href="https://lms.onnocenter.or.id/moodle/course/view.php?id=32">disini.</a>
 
 Selain online course, kamu juga bisa belajar jaringan secara offline melalui lembaga-lembaga training yang kredibel, mengikuti seminar-seminar seperti MUM (Mikrotik User Meeting), maupun kuliah di perguruan tinggi yang menyediakan program study **"jaringan komputer"**.
 
