@@ -17,7 +17,7 @@ Masih agak bingung dari mana memulai, he...he..
 
 Buat Repository dengan nama username.github.io
 
-![Gambar1](/assets/images/github2.png)
+![Gambar1](/assets/images/github2.jpg)
 
 Clone Repository baru tadi ke laptop
 
@@ -64,7 +64,7 @@ Pengaturan Domain, buat alias pada domain untuk mengarah ke ibnufachrizal.github
 
 Setting alias pada repository
 
-![Gambar3](/assets/images/github3.png)
+![Gambar3](/assets/images/github3.jpg)
 
 **Fitur lain Jekyll**
 
@@ -110,4 +110,4 @@ Sekian dan semoga bermanfaat.
 
 Daftar Pustaka
 
-# 1. [Github Pages Jekyll](https://www.google.com/search?q=github+pages+jekyll)
+1. [Github Pages Jekyll](https://www.google.com/search?q=github+pages+jekyll)
