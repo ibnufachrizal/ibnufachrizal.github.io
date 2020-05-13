@@ -65,7 +65,7 @@ Pengaturan Domain, buat alias pada domain untuk mengarah ke ibnufachrizal.github
 
 Setting alias pada repository
 
-![Gambar3](/assets/github2.png)
+![Gambar3](/assets/github3.png)
 
 # Fitur lain Jekyll
 
