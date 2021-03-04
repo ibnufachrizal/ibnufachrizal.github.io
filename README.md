@@ -1,3 +1,3 @@
-# ibnufachrizal.github.io
-
-Only for my profile
+---
+permalink: /index.html
+---
