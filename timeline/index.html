@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+    <title>[xdavidhu/timeline]</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/archive/assets/images/xdavid_new.png'/>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta name="viewport" content="initial-scale=0.7">
+    <meta name="description" content="xdavidhu - David Schütz - Security researcher & hacker & coder. - Timeline"/>
+    <meta name="theme-color" content="#222" />
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+</head>
+<body>
+<div class="panel" style="display: none">
+
+    <div align=center>
+        <img src="/archive/assets/images/david.jpg" height="150" width="150" style="border-radius: 50%; margin-top: 50px"/>
+        <h1 style="color: #fff; font-size: 50px; height: 30px; padding-top: 20px; padding-bottom: 20px">Bug Bounty Rewards:</h1>
+    </div>
+
+	<section id="cd-timeline" class="cd-container">
+
+        <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+		    <div class="cd-timeline-content">
+				<h2>Sari Roti Indonesia!!</h2>
+				<p>Menemukan bug menarik, mengubah harga product menjadi (-) minus atau disebut Parameter Tampering</p>
+				<span class="cd-date">2019 Oct 29</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<!-- TIMELINE ITEM -->
+
+        <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+		    <div class="cd-timeline-content">
+				<h2>Lemonilo</h2>
+				<p>Menemukan multiple bug seperti Kode OTP bocor di sisi server, Information Disclosure seperti Database, Credential AWS, JWT, Slack, Golang Metrics, Source code leaked di Github Repo, dan Grafana CVE-2019-15043</p>
+				<a href="https://i.imgur.com/nEWX2NI.jpg" target="_blank" class="cd-read-more" style="margin-right: 10px">Certificate</a>
+				<span class="cd-date">2018 Jun 17</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<!-- TIMELINE ITEM -->
+
+        <div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="img/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+		    <div class="cd-timeline-content">
+				<h2>Bose.com!</h2>
+				<p>Menemukan SSRF pada parameter (microsite=), membocorkan Kunci Credentials AWS dan mengungkapkan 500 data Internal </p>
+				<a href="https://twitter.com/xdavidhu/status/1120374644224163841" target="_blank" class="cd-read-more" style="margin-right: 10px">My Tweet</a>
+                <a href="https://www.youtube.com/watch?v=CA59RBproCA" target="_blank" class="cd-read-more" style="margin-right: 10px">My YouTube Video</a>
+                <a href="https://2019.bsidesbud.com/" target="_blank" class="cd-read-more" style="margin-right: 10px">BSidesBUD2019</a>
+				<span class="cd-date">2019 Mar 28</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+</div>
+<div id="particles-js" class="particles-div">
+</div>
+<noscript>
+    <div class="panel" align=center style="color: #fff"><h1>Please enable JavaScript.</h1></div>
+</noscript>
+<script>
+        particlesJS("particles-js", {"particles":{"number":{"value":160,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":1,"random":true,"anim":{"enable":true,"speed":1,"opacity_min":0,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":4,"size_min":0.3,"sync":false}},"line_linked":{"enable":false,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1,"direction":"none","random":true,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":600}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":250,"size":0,"duration":2,"opacity":0,"speed":3},"repulse":{"distance":400,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+
+        $("document").ready(function(){
+            $(".panel").fadeIn(1000);
+        });
+</script>
+</body>
+</html>
